@@ -169,6 +169,8 @@ Error message and password prompt
 
 <li>$:/state/tab1--188155890</li>
 
+<li>$:/state/toc/folder-ENCM-1412472320</li>
+
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
@@ -184,6 +186,10 @@ Error message and password prompt
 <li>Change Log</li>
 
 <li>ENCM</li>
+
+<li>folder</li>
+
+<li>folder_archived</li>
 
 <li>folder_starred</li>
 
@@ -9602,7 +9608,9 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Shortcuts]]</pre>
+# [[folder]]
+# [[folder_archived]]
+# [[folder_starred]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9619,16 +9627,19 @@ Error message and password prompt
 <div created="20200417080139572" modified="20200417080139572" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200417080318151" modified="20200417080318151" title="$:/state/tab/sidebar--595412856">
+<div created="20200417080318151" modified="20200417080503645" title="$:/state/tab/sidebar--595412856">
 <pre>cabinet</pre>
 </div>
 <div created="20200417080319091" modified="20200417080320272" title="$:/state/tab1--188155890">
 <pre>folder</pre>
 </div>
+<div created="20200417080505029" modified="20200417080505029" title="$:/state/toc/folder-ENCM-1412472320">
+<pre>open</pre>
+</div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200417080133452" list="$:/ControlPanel" modified="20200417080402335" title="$:/StoryList">
+<div created="20200417080133452" list="" modified="20200417080428918" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9827,6 +9838,30 @@ Here are the details of recent releases of &lt;b&gt;springpad&lt;/b&gt;.
 &lt;li&gt;&lt;$link to={{!!title}}&gt;&lt;$view field=&quot;title&quot;/&gt;&lt;/$link&gt; &lt;/li&gt;
 &lt;/$list&gt;
 &lt;/ul&gt;</pre>
+</div>
+<div caption="Folder" created="20180728173855942" list-after="$:/core/ui/SideBar/More" modified="20180728182815973" no_edit="true" title="folder" toc-link="no">
+<pre>&lt;$reveal type='nomatch' state='$:/settings/toc' text='folder'&gt;
+&lt;div class='tc-table-of-contents'&gt;
+&lt;&lt;toc-selective-expandable 'folder' 'sort[title]'&gt;&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type='match' state='$:/settings/toc' text='folder'&gt;
+&lt;div class='tc-table-of-contents'&gt;
+&lt;&lt;my-toc-selective-expandable 'folder' 'sort[title]'&gt;&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;</pre>
+</div>
+<div caption="Archived &lt;small&gt;(&lt;$count filter=&quot;[!has[draft.of]!is[system]tag[folder_archived]]&quot;/&gt;)&lt;/small&gt;" created="20180728173558458" modified="20180728183901735" title="folder_archived">
+<pre>&lt;$reveal type='nomatch' state='$:/settings/toc' text='folder'&gt;
+&lt;div class='tc-table-of-contents'&gt;
+&lt;&lt;toc-selective-expandable 'folder_archived' 'sort[title]'&gt;&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;
+&lt;$reveal type='match' state='$:/settings/toc' text='folder'&gt;
+&lt;div class='tc-table-of-contents'&gt;
+&lt;&lt;my-toc-selective-expandable 'folder_archived' 'sort[title]'&gt;&gt;
+&lt;/div&gt;
+&lt;/$reveal&gt;</pre>
 </div>
 <div caption="Starred &lt;small&gt;(&lt;$count filter=&quot;[!has[draft.of]!is[system]tag[folder_starred]]&quot;/&gt;)&lt;/small&gt;" created="20180804002503198" modified="20180804002614841" tags="" title="folder_starred">
 <pre>&lt;$reveal type='nomatch' state='$:/settings/toc' text='folder'&gt;
