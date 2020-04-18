@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/_stylesheet/table.css</li>
+
 <li>$:/config/AutoSave</li>
 
 <li>$:/core</li>
@@ -201,6 +203,153 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20150209032311448" modified="20150529021628652" tags="$:/tags/Stylesheet" title="$:/_stylesheet/table.css" type="text/css">
+<pre>/* Table Plain Design */
+.table-plain-design {
+	/*font-family: sans-serif;*/
+	-webkit-font-smoothing: antialiased;
+	font-size: 85%;
+	width: 100%;
+	overflow: auto;
+	border-style: none;
+}
+.table-plain-design th {
+	/*background-color: rgb(112, 196, 105);*/
+	font-weight: bold;
+	/*color: white;*/
+	padding: 3px 4px;
+	text-align: center;
+	border-style: none;
+}
+.table-plain-design td {
+	/*background-color: rgb(238, 238, 238);*/
+	padding: 3px 4px;
+	/*color: rgb(111, 111, 111);*/
+	border-style: none;
+	border-bottom: solid 0.5px rgb(238, 238, 238);
+	vertical-align:top
+}
+.table-plain-design tr:hover {
+	background-color: #FFFFE0;
+}
+/* End of Table Plain Design */
+
+
+/* Table Line Design */
+.table-line-design {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 85%;
+	width: 100%;
+	overflow: auto;
+	border-style: none;
+	border-bottom: solid 0.5px Black;
+}
+.table-line-design th {
+	background-color: white;
+	font-weight: normal;
+	color: black;
+	padding: 1px 2px;
+	text-align: left;
+	border-style: none;
+	border-bottom: solid 0.5px Black;
+}
+.table-line-design td {
+	/*background-color: rgb(238, 238, 238);*/
+	padding: 1px 2px;
+	/*color: rgb(111, 111, 111);*/
+	border-style: none;
+	border-bottom: solid 0.5px rgb(238, 238, 238);
+	vertical-align:top
+}
+/* End of Table Line Design */
+
+
+/* Table NO Design*/
+.table-no-design {
+	/*font-family: sans-serif;*/
+	-webkit-font-smoothing: antialiased;
+	font-size: 85%;
+	width: 100%;
+	overflow: auto;
+	border-style: none;
+}
+.table-no-design th {
+	font-weight: bold;
+	padding: 3px 4px;
+	vertical-align:top
+	border: solid 0.5px rgb(258, 258, 258);
+}
+.table-no-design td {
+	padding: 3px 4px;
+	border-style: none;
+	border: solid 0.5px rgb(238, 238, 238);
+	vertical-align:top
+}
+/* End of Table NO Design */
+
+
+/* Table Green Design */
+.table-green-design {
+	/*font-family: sans-serif;*/
+	-webkit-font-smoothing: antialiased;
+	font-size: 95%;
+	width: 100%;
+	overflow: auto;
+	border-style: none;
+}
+.table-green-design th {
+	background-color: rgb(112, 196, 105);
+	font-weight: bold;
+	color: white;
+	padding: 3px 4px;
+	text-align: center;
+	border-style: none;
+}
+.table-green-design td {
+	/*background-color: rgb(238, 238, 238);*/
+	padding: 3px 4px;
+	color: rgb(111, 111, 111);
+	border-style: none;
+	border-bottom: solid 0.5px #D3D3D3;
+	vertical-align:top
+}
+.table-green-design tr:hover {
+	background-color: #FFFFE0;
+}
+/* End of Table Green Design */
+
+
+/* Table SharePoint Design */
+.table-sharepoint-design {
+	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 85%;
+	/*width: 500px;*/
+	overflow: auto;
+	border-style: none;
+}
+.table-sharepoint-design th {
+	background-color: #FFFFFF;
+	font-weight: bold;
+	color: #696969;
+	padding: 1px 5px;
+	width: 150px;
+	border-top: solid 0.5px #ADD8E6;
+	border-bottom: solid 0.5px #ADD8E6;
+	border-left: solid 0.5px #FFFFFF;
+	vertical-align:top;
+}
+.table-sharepoint-design td {
+	background-color: #F0F8FF;
+	padding: 1px 5px;
+	border-style: none;
+	border-top: solid 0.5px #ADD8E6;
+	border-bottom: solid 0.5px #ADD8E6;
+	vertical-align:top;
+}
+/* End of Table SharePoint Design */</pre>
+</div>
 <div created="20200417080010674" modified="20200417080010674" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
@@ -9595,7 +9744,7 @@ Error message and password prompt
 <div status="complete" title="$:/Import">
 <pre>The following tiddlers were imported:
 
-# [[Main]]</pre>
+# [[$:/_stylesheet/table.css]]</pre>
 </div>
 <div title="$:/isEncrypted">
 <pre>no</pre>
@@ -9606,16 +9755,16 @@ Error message and password prompt
 <div created="20200417081719674" modified="20200417081719674" title="$:/state/tab--1963855381">
 <pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20200417075906232" modified="20200417081718524" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200417075906232" modified="20200418132556169" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200417075908024" modified="20200417080009883" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/General</pre>
+<div created="20200417075908024" modified="20200418132558026" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200417081707486" list="Main" modified="20200417081715918" title="$:/StoryList">
+<div created="20200418132553431" list="Main" modified="20200418132553431" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9663,11 +9812,11 @@ Error message and password prompt
         },
         &quot;$:/info/browser/screen/width&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/width&quot;,
-            &quot;text&quot;: &quot;1920&quot;
+            &quot;text&quot;: &quot;1536&quot;
         },
         &quot;$:/info/browser/screen/height&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/screen/height&quot;,
-            &quot;text&quot;: &quot;1080&quot;
+            &quot;text&quot;: &quot;864&quot;
         },
         &quot;$:/info/browser/language&quot;: {
             &quot;title&quot;: &quot;$:/info/browser/language&quot;,
@@ -9797,13 +9946,13 @@ Error message and password prompt
 <div created="20200417081726364" modified="20200417081726364" title="$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth">
 <pre>{{$:/themes/tiddlywiki/vanilla/metrics/tiddlerwidth}}</pre>
 </div>
-<div created="20181113130730932" modified="20200417080035641" tags="" title="Main">
+<div created="20181113130730932" modified="20200418132715934" tags="" title="Main">
 <pre>!!! Golden Copy
 * [[Version 5.1.17|http://www.biz-avenue.com/tw/tw5_empty_5.1.17.htm]]
 * [[Version 5.1.9|http://www.biz-avenue.com/tw/wikinote.htm]]
 
 !!! Sites
-&lt;table&gt;
+&lt;table class=&quot;table-line-design&quot;&gt;
 &lt;tr&gt;&lt;th&gt;Site Name&lt;/th&gt;&lt;th&gt;Description&lt;/th&gt;&lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[[Springpad|https://tw5repo.github.io/tw5/springpad.htm]]&lt;/td&gt;
